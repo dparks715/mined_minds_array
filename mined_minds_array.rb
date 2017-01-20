@@ -1,10 +1,28 @@
 def create_mined_minds_array()
-	 #create empty array, but defined it as follows
-	mined_minds_array = [] #now populate 100x
+	 #create empty array
+	mined_minds_array = []
+
+	num =1
+
+	# put 1-100 into array, replacing numbers that meet conditionals
 	100.times do
-		#push itemsinto array
-		mined_minds_array << 'array item'
+		if num % 5 == 0 && num % 3 == 0
+			mined_minds_array << 'mined minds'
+
+		elsif num % 5 == 0
+			mined_minds_array << 'minds'
+
+		elsif num % 3 == 0
+			mined_minds_array << 'mined'
+
+		else
+			mined_minds_array << num
+
+		end
+
+		num = num +1
+			
 	end
-#the previous fills the array witih 100 items, then 
+
 	mined_minds_array
 end
