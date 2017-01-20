@@ -2,7 +2,7 @@ def create_mined_minds_array()
 	 #create empty array
 	mined_minds_array = []
 
-	num =1
+	num = 1
 
 	# put 1-100 into array, replacing numbers that meet conditionals
 	100.times do
@@ -20,7 +20,7 @@ def create_mined_minds_array()
 
 		end
 
-		num = num +1
+		num = num + 1
 			
 	end
 
